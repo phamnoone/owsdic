@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#dadada">
+
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_activity_main" />
+
+        </LinearLayout>
+    <!--<EditText-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/txtSeach"-->
+        <!--android:layout_below="@+id/space9"-->
+        <!--android:layout_toLeftOf="@+id/bntSeach"-->
+        <!--android:layout_toEndOf="@+id/space29"-->
+        <!--android:layout_toRightOf="@+id/space29"-->
+        <!--android:textColor="#ffffffff"-->
+        <!--android:textStyle="bold" />-->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bntFollow"
+        android:background="#dadada" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="70px"
+        android:layout_below="@+id/txtSeach"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space2" />
+
+    <Space
+        android:layout_width="25px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space8" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/space2"
+        android:layout_toStartOf="@+id/space2"
+        android:id="@+id/space9" />
+
+    <Space
+        android:layout_width="25px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/txtSeach"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Bạn muốn xem danh sách theo dõi?"
+        android:id="@+id/bntFollow"
+        android:textStyle="bold|italic"
+        android:textColor="#ff78b1ff"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_toLeftOf="@+id/space10"
+        android:layout_toStartOf="@+id/space10" />
+
+    <!--<ImageButton-->
+        <!--android:background="@null"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/bntSeach"-->
+        <!--android:src="@android:drawable/ic_menu_search"-->
+        <!--android:layout_alignTop="@+id/txtSeach"-->
+        <!--android:layout_alignRight="@+id/space10"-->
+        <!--android:layout_alignEnd="@+id/space10" />-->
+
+    <Space
+        android:layout_width="100px"
+        android:layout_height="20px"
+        android:layout_above="@+id/listQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space29" />
+</RelativeLayout>

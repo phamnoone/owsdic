@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12-12-2012"
+        android:id="@+id/date"
+        android:layout_weight="3.5"
+        android:textSize="15sp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="JPLT N1"
+        android:id="@+id/N"
+        android:layout_weight="4"
+        android:textSize="15sp"
+        android:textColor="#ff000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="20"
+        android:id="@+id/numberquetions"
+        android:layout_weight="4"
+        android:textSize="15sp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="20"
+        android:id="@+id/point"
+        android:layout_weight="4"
+        android:textSize="15sp"
+        android:textColor="#ff000000"
+        android:textStyle="bold" />
+</LinearLayout>

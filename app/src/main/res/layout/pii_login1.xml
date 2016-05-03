@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.hongb_000.dictionaryows.PII.LogIn"
+    android:id="@+id/activity_main"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/space" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_toRightOf="@+id/space28"
+        android:layout_toLeftOf="@+id/space26"
+        android:layout_toStartOf="@+id/space26"
+        android:layout_below="@+id/space"
+        android:layout_above="@+id/login_with_facebook">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:id="@+id/textView15"
+            android:layout_marginTop="31dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/container_toolbar"
+            android:layout_toRightOf="@+id/space23"
+            android:layout_toEndOf="@+id/space23"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmailLogin"
+            android:layout_below="@+id/textView15"
+            android:layout_toRightOf="@+id/space23"
+            android:layout_toLeftOf="@+id/space26"
+            android:layout_toStartOf="@+id/space26"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu:"
+            android:id="@+id/textView16"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/space23"
+            android:layout_toRightOf="@+id/space23"
+            android:layout_toEndOf="@+id/space23"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtPassLogin"
+            android:layout_below="@+id/space23"
+            android:layout_toRightOf="@+id/space23"
+            android:layout_alignRight="@+id/txtEmailLogin"
+            android:layout_alignEnd="@+id/txtEmailLogin"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Đăng nhập"
+            android:id="@+id/bntLogin"
+            android:background="#ff78b1ff"
+            android:typeface="serif"
+            android:textSize="15dp"
+            android:layout_below="@+id/space"
+            android:layout_toRightOf="@+id/space28"
+            android:layout_alignRight="@+id/txtPassLogin"
+            android:layout_alignEnd="@+id/txtPassLogin"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_with_facebook"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="@string/login_with_facebook"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/space30"
+        android:layout_centerHorizontal="true" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/login_with_google"
+        android:text="@string/login_with_google"
+        android:layout_width="126dp"
+        android:layout_height="38dp"
+        android:background="@null"
+        android:layout_below="@+id/login_with_facebook"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí"
+        android:id="@+id/bntSignUpMain"
+        android:layout_marginBottom="35dp"
+        android:textColor="#6a70ff"
+        android:textSize="16dp"
+        android:gravity="bottom|center_vertical|center"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/space26"
+        android:layout_toStartOf="@+id/space26"
+        android:layout_marginRight="77dp"
+        android:layout_marginEnd="77dp" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="70px"
+        android:layout_below="@+id/txtEmailLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản?"
+        android:id="@+id/textView17"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/bntSignUpMain"
+        android:layout_toLeftOf="@+id/bntSignUpMain"
+        android:layout_toStartOf="@+id/bntSignUpMain" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="70px"
+        android:layout_above="@+id/login_with_facebook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space28" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="20px"
+        android:layout_above="@+id/login_with_facebook"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space26" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space27"
+        android:layout_alignBottom="@+id/bntSignUpMain"
+        android:layout_alignLeft="@+id/bntLogin"
+        android:layout_alignStart="@+id/bntLogin" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:id="@+id/space"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_toRightOf="@+id/bntSignUpMain"
+        android:layout_toEndOf="@+id/bntSignUpMain" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="20px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space30" />
+
+
+    <!--<com.facebook.login.widget.ProfilePictureView-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:id="@+id/avatar"></com.facebook.login.widget.ProfilePictureView>-->
+
+
+</RelativeLayout>

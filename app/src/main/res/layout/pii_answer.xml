@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/answer"
+    android:background="@null">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/txtNameAnswer"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#1f1f1f"
+        android:layout_below="@+id/space5"
+        android:layout_toRightOf="@+id/space5"
+        android:autoText="false"
+        android:background="#ffffffff"
+        android:layout_toLeftOf="@+id/space6"
+        android:layout_toStartOf="@+id/space6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer: lsssssssssssssslskskskkkkkddddddddddddđ"
+        android:id="@+id/txtAnswer"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/txtNameAnswer"
+        android:layout_alignLeft="@+id/txtNameAnswer"
+        android:layout_alignStart="@+id/txtNameAnswer"
+        android:textColor="#1f1f1f"
+        android:background="#ffffffff"
+        android:layout_toLeftOf="@+id/space6"
+        android:layout_toStartOf="@+id/space6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thích"
+        android:id="@+id/txtVoteAnswer"
+        android:textSize="12dp"
+        android:background="#ffffffff"
+        android:layout_below="@+id/space4"
+        android:layout_toRightOf="@+id/space7"
+        android:layout_toEndOf="@+id/space7" />
+
+    <!--<com.facebook.login.widget.ProfilePictureView-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:id="@+id/avatarAnswer"-->
+        <!--android:layout_below="@+id/space5"-->
+        <!--android:layout_toRightOf="@+id/space4"-->
+        <!--android:layout_toEndOf="@+id/space4"></com.facebook.login.widget.ProfilePictureView>-->
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:id="@+id/space5" />
+
+    <Space
+        android:layout_width="40px"
+        android:layout_height="20px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space6"
+        android:layout_centerVertical="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="5px"
+        android:layout_below="@+id/txtAnswer"
+        android:id="@+id/space7" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/bntVote"
+        android:src="@mipmap/vote"
+        android:background="@null"
+        android:layout_below="@+id/txtAnswer"
+        android:layout_toRightOf="@+id/space4"
+        android:layout_toEndOf="@+id/space4" />
+
+    <Space
+        android:layout_width="10px"
+        android:layout_height="10px"
+        android:layout_below="@+id/txtAnswer"
+        android:layout_toRightOf="@+id/txtVoteAnswer"
+        android:layout_toEndOf="@+id/txtVoteAnswer"
+        android:id="@+id/space4" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_below="@+id/txtVoteAnswer"
+        android:layout_alignLeft="@+id/txtVoteAnswer"
+        android:layout_alignStart="@+id/txtVoteAnswer" />
+
+</RelativeLayout>

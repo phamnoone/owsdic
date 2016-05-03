@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.example.hongb_000.dictionaryows.KanjiRecognizer.HorizontalListView
+        android:id="@+id/list_kanji_recog"
+        android:layout_weight="1.5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+    </com.example.hongb_000.dictionaryows.KanjiRecognizer.HorizontalListView>
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:id="@+id/drawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/note_draw_kanji"
+                android:textColor="#333a3a3a"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/undo"
+            android:text="UNDO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textColorPrimary"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/clear"
+            android:text="CLEAR"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textColorPrimary"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/redo"
+            android:text="REDO"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textColorPrimary"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

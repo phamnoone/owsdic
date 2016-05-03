@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hongb_000.dictionaryows" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- USE_CREDENTIALS is necessary for Google+ login -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- GET_ACCOUNTS is necessary to display email address of logged in user. This permission is optional -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- quyen nhan dien -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/iconmain"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity" />
+        <activity android:name=".Search.DisplayMeanKanjiActivity" />
+        <activity android:name=".Search.DisplayMeanWordActivity" />
+        <activity android:name=".Search.HistoryActivity" />
+        <activity android:name=".Search.DisplayKanjiFromCameraActivity"/>
+        <activity android:name=".KanjiRecognizer.KanjiRecognizerActivity"/>
+        <activity android:name=".PII.Home" />
+        <activity android:name=".PII.LogIn" />
+        <activity android:name=".PII.PostData" />
+        <activity android:name=".PII.SignUp" />
+        <activity android:name=".PII.ListAnswer" />
+        <activity android:name=".PII.Follow"></activity>
+        <activity android:name=".PIII.PTestActivity.SettingQuetions" />
+        <activity android:name=".PIII.PTestActivity.TestActivity" />
+        <activity android:name=".PIII.PTestActivity.TabNodeActivity" />
+
+        <activity android:name=".PIV.SettingActivity" />
+        <activity
+            android:name=".PVI.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name=".PVI.PreferencesActivity" />
+        <activity android:name=".PVII.HelpActivity"></activity>
+        <activity android:name=".PIII.MainTestActivity"></activity>
+        <activity android:name=".PIII.PTestActivity.ResultActivity"></activity>
+        <activity android:name=".PIII.PHistory.HistoryTestActivity"></activity>
+        <activity android:name=".PIII.PUpdate.UpdateActivity"></activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

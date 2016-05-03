@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/thanh2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lựa chọn số câu hỏi và trình độ hợp lý với thời gian và trình độ hiện có của bạn :D"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffffff" >
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Trình độ :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                style="@android:style/Widget.Holo.Spinner"
+                android:id="@+id/spinner2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:spinnerMode="dialog"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Số câu hỏi : "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"
+                android:textColor="#ff000000"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:spinnerMode="dialog"
+                style="@android:style/Widget.Holo.Spinner"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:longClickable="true"
+            android:text="Bắt đầu"
+            android:background="@drawable/shutter_button_2"
+            android:textColor="#fffaffff" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/testbg"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>
